@@ -1,3 +1,9 @@
+## Proyecto final para el curso Procesos y Disenio de Software
+
+- Fabian Antoyne Garcia Gallego
+- Carlos Steven Guerrero Betancourth
+- Miguel Angel Cumbalaza Garcia
+
 ## Usuario default
 
 admin:admin
