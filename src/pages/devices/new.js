@@ -6,7 +6,6 @@ import { Query } from 'mongoose'
 export default function DeviceFormPage() {
 
     const [newDevice, setNewDevice] = useState({
-        device_id: 5,
         model: "",
         state: "Disponible",
         battery: 100
@@ -75,7 +74,7 @@ export default function DeviceFormPage() {
     const getDevice = async () => {
         const res = await fetch('http://localhost:3000/api/devices/' + query.id)
         const data = await res.json()
-        setNewDevice({device_id: data.device_id, model: data.model, state: data.state, battery: data.battery})
+        setNewDevice({model: data.model, state: data.state, battery: data.battery})
     }
 
     useEffect(() => {

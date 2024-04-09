@@ -1,11 +1,6 @@
 import {Schema, model, models} from 'mongoose'
 
 const deviceSchema = new Schema({
-    device_id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
     model: {
         type: String,
         required: [true, 'Se requiere especificar el modelo'],
@@ -17,7 +12,7 @@ const deviceSchema = new Schema({
     },
     battery: {
         type: Number,
-        required: true,
+        required: true
     }
 }, {
     timestamps: true,
