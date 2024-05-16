@@ -15,6 +15,15 @@ export async function dbConnect(){
     console.log(db.connection.db.databaseName);
 }
 
+export async function dbDisconnect() {
+    if (!conn.isConnected) return;
+
+    await connection.close();
+    conn.isConnected = false;
+
+    console.log("MongoDB connection closed");
+}
+
 connection.on("connected", () => {
     console.log("MongoDB is connected")
 })

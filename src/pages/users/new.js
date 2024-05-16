@@ -94,7 +94,7 @@ export default function UserFormPage() {
                     <Form.Input label="Nombre de usuario" placeholder="Nombre de usuario" name="username" onChange={handleChange} error={errors.username ? {content: "Ingresa un nombre de usuario", pointing: "below"} : null} value={newUser.username}/>
                     <Form.Input label="Contrasenia" placeholder="Contrasenia" name="password" onChange={handleChange} error={errors.password ? {content: "Ingresa una contrasenia", pointing: "below"} : null} value={newUser.password}/>
                     <Form.Input label="Email" placeholder="Email" name="email" onChange={handleChange} error={errors.email ? {content: "Ingresa un email", pointing: "below"} : null} value={newUser.email}/>
-                    <Button primary>{query.username ? 'Actualizar' : 'Crear'}</Button>
+                    <Button name="createUserButton" primary>{query.username ? 'Actualizar' : 'Crear'}</Button>
                 </Form>
             </Grid.Column>
         </Grid.Row>

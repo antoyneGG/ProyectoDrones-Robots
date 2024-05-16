@@ -41,7 +41,7 @@ const Login = ({users}) => {
       <div className="ui centered grid container">
         <div className="nine wide column">
           {loginError && (
-            <div className="ui icon warning message">
+            <div name="loginError" className="ui icon warning message">
               <i className="lock icon"></i>
               <div className="content">
                 <div className="header">
@@ -74,7 +74,7 @@ const Login = ({users}) => {
                     onChange={handlePasswordChange}
                   />
                 </div>
-                <button className="ui primary labeled icon button" type="submit">
+                <button name="loginButton" className="ui primary labeled icon button" type="submit">
                   <i className="unlock alternate icon"></i>
                   Login
                 </button>

@@ -14,6 +14,7 @@ const User = ({ user, error }) => {
       await fetch(`http://localhost:3000/api/users/${username}`, {
         method: "DELETE",
       });
+      console.log("Deleted.");
     } catch (error) {
       console.error(error);
     }

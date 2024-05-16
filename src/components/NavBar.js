@@ -28,7 +28,7 @@ export const NavBar = () => {
                 )}
                 {pathname === '/list_usr' && (
                     <Menu.Item>
-                        <Button primary size="mini" onClick={() => router.push('/users/new')} >Agregar usuario</Button>
+                        <Button name="addUserButton" primary size="mini" onClick={() => router.push('/users/new')} >Agregar usuario</Button>
                     </Menu.Item>
                 )}
                 {pathname === '/home' && ([
@@ -36,7 +36,7 @@ export const NavBar = () => {
                         <Button primary size="mini" onClick={() => router.push('/list_dev')} >Gestionar dispositivos</Button>
                     </Menu.Item>,
                     <Menu.Item>
-                        <Button primary size="mini" onClick={() => router.push('/list_usr')} >Gestionar usuarios</Button>
+                        <Button name="userButton" primary size="mini" onClick={() => router.push('/list_usr')} >Gestionar usuarios</Button>
                     </Menu.Item>,
                     <Menu.Item>
                         <Button primary size="mini" onClick={() => router.push('/')} >Gestionar reservas</Button>
